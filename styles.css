@@ -69,6 +69,7 @@
     gap: 15px;
     justify-content: space-evenly;
     max-width: 600px;
+    max-height: 500px;
     
     @media only screen and (min-width: 600px) {
         justify-content: flex-start;
@@ -142,6 +143,8 @@ hr {
     font-size: 60px;
     line-height: 60px;
     font-weight: 800;
+    margin-top: -50px;
+    position: relative;
 }
 
 .form-section {
@@ -154,3 +157,11 @@ hr {
     color: var(--purple)
 }
 
+.error-msg {
+    z-index: 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    color: var(--lightRed);
+    font-size: 10px;
+    font-style: italic;
+}
